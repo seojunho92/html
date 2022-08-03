@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>input attribute</title>
+</head>
+<body>
+    <form>
+        <input type='text' name='userId' id='userId' size='15'/> <br> <!--name : 파라미터의 이름 / id : 객체의 이름-->
+        <input type='text' value='how' readonly/> <br> <!--value : value값을 넣음 / readonly : 읽기전용-->
+        <input type='text' placeholder='이름'/> <br> <!--채팅을 치면 사라지는 텍스트를 넣음-->
+        <input type='text' autofocus/> <br> <!--autofocus : 자동으로 커서 포커스가 들어감-->
+        <input type='text' minlength='3' maxlength='5'/> <br> <!--minlength='3' / maxlength='5' : 최소, 최대글자를 지정한다.-->
+        <input type='number' min='1' max='6' step='2' required/> <br> <!--required : 필수입력 / step='2' 2씩 증가-->            
+        <input type='date' min='2022-08-01' max='2022-08-03'/> <br>
+        <input type='time' min='09:00' max='13:00'/> <br>
+
+        <input type='submit' value='전송'/>
+        <input type='submit' formaction='#' formmethod='post' formtarget='msg'/> <br>
+        <input type='file' multiple/>
+    </form>
+</body>
+</html>
